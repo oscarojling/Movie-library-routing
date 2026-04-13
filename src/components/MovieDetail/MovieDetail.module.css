@@ -1,0 +1,73 @@
+.container {
+  padding: 24px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background-color: #1c2228;
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  gap: 24px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.overview {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.rating {
+  color: #ff8000;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.year {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.genre {
+  background: #ff8000;
+  color: white;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

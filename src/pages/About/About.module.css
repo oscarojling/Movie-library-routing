@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px;
+  color: #fff;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  color: #ff8000;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+}

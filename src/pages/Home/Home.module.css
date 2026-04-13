@@ -1,0 +1,81 @@
+.hero {
+  text-align: center;
+  padding: 40px;
+  background: #ff8000;
+  margin: 16px;
+  border-radius: 16px;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.subTitle {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.button {
+  background: #ff8000;
+  color: #fff;
+  padding: 12px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: #e67300;
+}
+
+.section {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.subHeader {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.seeAll {
+  color: #ff8000;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.seeAll:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .seeAll {
+    font-size: 1.5rem;
+  }
+
+  .subHeader {
+    font-size: 2rem;
+  }
+}

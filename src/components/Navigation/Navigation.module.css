@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  padding: 16px;
+}
+
+.navItem {
+  font-size: 2rem;
+  padding: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  transition: border-bottom-color 0.3s;
+}
+
+.navItem:hover {
+  border-bottom-color: #ff8000;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav.active {
+    display: flex;
+    width: 100%;
+    background-color: #ff8000;
+  }
+
+  .navItem {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+}

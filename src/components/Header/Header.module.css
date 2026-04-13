@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.icon {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .icon {
+    display: block;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+}

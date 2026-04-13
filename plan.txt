@@ -1,0 +1,25 @@
+API WEBSITE:
+
+Found TMDB API, reasarch how to use a private key
+
+Resusing styling, components and structure from an earlier assignment as a base 
+
+Need 4 pages, Home, Movies, About, and fourth unsure
+
+Movies page will have 3 subroutes: Popular, Top Rated, Upcoming
+
+Use dynamic route for specifik movie details
+
+Use Layout and Outlet for page structure
+
+Create a Header component that use logo used from before and create nav links
+
+Create a basic Footer component
+
+Reuse FilmCard and FilmGrid components from earlier assignment
+
+Create a custom useFetch hook for not repating
+
+Checking out motion animation as last styling and custom hooks from usehooks
+
+
