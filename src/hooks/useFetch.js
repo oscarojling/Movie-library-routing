@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useFetch = (endpoint = " ") => {
+const useFetch = (endpoint = "") => {
   const [data, setData] = useState(null)
   const API_ENDPOINT = `${import.meta.env.VITE_API_ENDPOINT}${endpoint}?api_key=${import.meta.env.VITE_API_KEY}`
 
@@ -8,8 +8,7 @@ const useFetch = (endpoint = " ") => {
     try {
       const response = await fetch(API_ENDPOINT);
       const movieData = await response.json();
-      setData(movieData.results);
-      console.log(movieData.results);
+      setData(movieData.results || movieData);
     } catch (error) {
       console.log(error);
     }

@@ -1,19 +1,10 @@
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./MovieDetail.module.css";
-
-const API_KEY = import.meta.env.VITE_API_KEY;
-const BASE_URL = import.meta.env.VITE_API_ENDPOINT;
+import useFetch from "../../hooks/useFetch";
 
 const MovieDetail = () => {
   const { id } = useParams();
-  const [movie, setMovie] = useState(null);
-
-  useEffect(() => {
-    fetch(`${BASE_URL}movie/${id}?api_key=${API_KEY}`)
-      .then((res) => res.json())
-      .then((data) => setMovie(data));
-  }, [id]);
+  const movie = useFetch(`movie/${id}`);
 
   return (
     <div className={styles.container}>
