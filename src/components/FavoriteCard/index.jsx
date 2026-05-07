@@ -16,10 +16,10 @@ const FavoriteCard = ({ title, year, genre, imdb, rt, image }) => {
       <div className={styles.genres}>
         <span className={styles.genre}>{genre}</span>
       </div>
-      <a className={styles.link} href={imdb}>
+      <a className={styles.link} target="_blank" href={imdb}>
         IMDB
       </a>
-      <a className={styles.link} href={rt}>
+      <a className={styles.link} target="_blank" href={rt}>
         Rotten Tomatoes
       </a>
     </motion.div>
