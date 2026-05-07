@@ -5,7 +5,7 @@ const FilmCard = ({ id, title, year, rating, image }) => {
   return (
     <NavLink to={`/movies/${id}`} className={styles.card}>
       <img
-        src={`https://image.tmdb.org/t/p/w500${image}`}
+        src={`https://image.tmdb.org/t/p/original${image}`}
         alt={title}
         className={styles.image}
       />
